@@ -48,7 +48,7 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-stone-50">
-        <h2 className="font-display text-2xl text-gray-900 mb-4">Pieza de archivo no disponible</h2>
+        <h2 className="font-display text-2xl text-gray-900 mb-4">Pieza no disponible</h2>
         <button onClick={() => navigate('/catalogo')} className="text-brand-main border-b border-brand-main">Volver a La Galería</button>
       </div>
     );
@@ -155,7 +155,7 @@ const ProductDetail: React.FC = () => {
             <h1 className="font-display text-4xl lg:text-5xl text-gray-900 mb-4 leading-tight">
               {product.name}
             </h1>
-            <p className="font-serif text-lg text-gray-500 italic mb-8 font-light">Ref. Archivo: {product.id.toString().padStart(4, '0')}</p>
+            <p className="font-serif text-lg text-gray-500 italic mb-8 font-light">Ref. Catálogo: {product.id.toString().padStart(4, '0')}</p>
 
             <div className="prose prose-stone mb-10">
               <p className="font-sans text-gray-600 font-light leading-relaxed text-lg">

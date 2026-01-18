@@ -106,7 +106,7 @@ const Home: React.FC = () => {
               className="inline-flex flex-col items-center gap-2 group"
             >
               <span className="bg-gray-900 text-white px-12 py-4 text-xs uppercase tracking-[0.2em] font-bold group-hover:bg-brand-main transition-all duration-300 shadow-lg">
-                Explorar Archivo Completo
+                Explorar Colección Completa
               </span>
               <span className="text-[10px] text-gray-400 uppercase tracking-widest mt-2 group-hover:text-brand-main transition-colors">
                 Ver más de 50 piezas exclusivas
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             <span className="text-brand-main text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Concierge Service</span>
             <h3 className="font-display text-3xl text-gray-900 mb-6">TU CITA PRIVADA</h3>
             <p className="font-sans text-gray-500 font-light mb-8 leading-relaxed">
-              Creemos que la joyería debe probarse con calma y una copa en mano.
+              Creemos que la joyería debe probarse con calma y privacidad.
               Agenda tu visita a nuestro showroom {COMPANY_INFO.location} para una sesión de estilismo personalizada.
             </p>
             <Link to="/contacto" className="inline-block bg-gray-900 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-brand-main transition-colors">

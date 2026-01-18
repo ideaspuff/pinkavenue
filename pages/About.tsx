@@ -213,9 +213,9 @@ const About: React.FC = () => {
                     <p className="font-display text-2xl md:text-3xl text-gray-900 max-w-2xl mx-auto leading-relaxed mb-6">
                         "Te invitamos a descubrir el secreto mejor guardado de Acapulco."
                     </p>
-                    <p className="font-sans font-light text-gray-500 mb-10 leading-relaxed">
-                        Ya sea para una boda íntima en la playa o una fastuosa celebración de XV años en salón,
-                        nuestro equipo está listo para recibirte con una copa de champagne y la colección más exquisita del estado.
+                    <p className="font-sans text-gray-600 leading-relaxed font-light mb-8">
+                        Ya sea que busques la pieza final para tu gran día o un accesorio statement para una gala,
+                        nuestro equipo está listo para recibirte con la atención personalizada y la colección más exquisita del estado.
                     </p>
                     <div className="flex justify-center gap-6">
                         <Link to="/catalogo" className="px-8 py-3 border border-gray-200 uppercase tracking-widest text-xs font-bold hover:border-brand-main hover:text-brand-main transition-colors">

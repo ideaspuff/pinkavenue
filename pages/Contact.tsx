@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
               <div className="w-16 h-px bg-brand-main mb-6"></div>
               <p className="font-sans text-gray-500 font-light text-lg leading-relaxed text-justify">
                 La verdadera magia de nuestras piezas se revela al contacto con la piel.
-                Te invitamos a nuestro showroom privado en Acapulco, un espacio diseñado para que, con copa en mano, encuentres los accesorios que definirán tu look nupcial o de gala.
+                Te invitamos a nuestro showroom privado en Acapulco, un espacio diseñado para que, con asesoría experta, encuentres los accesorios que definirán tu look nupcial o de gala.
               </p>
               <p className="font-sans text-gray-500 font-light text-lg leading-relaxed mt-4 italic">
                 Atención exclusivamente personalizada.

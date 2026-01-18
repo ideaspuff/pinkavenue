@@ -1,8 +1,8 @@
 export const COMPANY_INFO = {
   name: "Pink Avenue Joyería",
   phone: "744 199 7163",
-  location: "en el corazón de Acapulco",
-  fullAddress: "Av. Costera Miguel Alemán, en el corazón de Acapulco, Guerrero, México",
+  location: "en Fracc. Hornos Insurgentes",
+  fullAddress: "Calle Montecarlo esq. Av. del Tanque, Fracc. Hornos Insurgentes, Acapulco, Guerrero, México, 39350",
   email: "contacto@pinkavenue.com.mx",
   hours: {
     weekdays: "Lunes a Viernes de 11 am a 8pm",
