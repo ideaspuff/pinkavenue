@@ -31,14 +31,14 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'border-b border-stone-100 py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
+
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center group">
             <div className="flex items-center gap-2">
-                <Diamond className="w-6 h-6 text-brand-main transition-colors duration-300" />
-                <h1 className="font-display text-2xl tracking-widest font-bold text-gray-900">
+              <Diamond className="w-6 h-6 text-brand-main transition-colors duration-300" />
+              <h1 className="font-display text-2xl tracking-widest font-bold text-gray-900">
                 PINK AVENUE
-                </h1>
+              </h1>
             </div>
             <span className="text-[0.6rem] tracking-[0.3em] uppercase text-brand-main mt-0.5">Joyería</span>
           </Link>
@@ -49,6 +49,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => console.log('Nav Link Clicked:', link.path)}
                 className={`font-sans text-xs uppercase tracking-[0.2em] font-bold hover:text-brand-main transition-colors duration-200 relative group ${location.pathname === link.path ? 'text-brand-main' : 'text-gray-600'}`}
               >
                 {link.name}
