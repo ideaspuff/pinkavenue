@@ -4,6 +4,7 @@ export const COMPANY_INFO = {
   location: "en Fracc. Hornos Insurgentes",
   fullAddress: "Calle Montecarlo esq. Av. del Tanque, Fracc. Hornos Insurgentes, Acapulco, Guerrero, México, 39350",
   email: "contacto@pinkavenue.com.mx",
+  privacyEmail: "privacidad@pinkavenue.com.mx",
   hours: {
     weekdays: "Lunes a Viernes de 11 am a 8pm",
     saturday: "Sábados de 11 am a 4.30pm",

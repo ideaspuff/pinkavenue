@@ -7,6 +7,9 @@ import Catalog from './pages/Catalog';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ProductDetail from './pages/ProductDetail';
+
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 import { FittingRoomProvider } from './context/FittingRoomContext';
 import FittingRoomFloat from './components/FittingRoomFloat';
 
@@ -32,6 +35,8 @@ const App: React.FC = () => {
               <Route path="/producto/:id" element={<ProductDetail />} />
               <Route path="/nosotros" element={<About />} />
               <Route path="/contacto" element={<Contact />} />
+              <Route path="/aviso-de-privacidad" element={<PrivacyPolicy />} />
+              <Route path="/terminos-y-condiciones" element={<Terms />} />
             </Routes>
           </main>
           <FittingRoomFloat />

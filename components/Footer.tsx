@@ -56,6 +56,11 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
+            <Link to="/aviso-de-privacidad" className="text-[10px] text-gray-400 hover:text-brand-main transition-colors uppercase tracking-wider">Aviso de Privacidad</Link>
+            <span className="hidden md:block text-gray-300">|</span>
+            <Link to="/terminos-y-condiciones" className="text-[10px] text-gray-400 hover:text-brand-main transition-colors uppercase tracking-wider">Términos y Condiciones</Link>
+          </div>
           <p className="font-sans text-xs text-gray-400 tracking-widest">
             &copy; {new Date().getFullYear()} PINK AVENUE JOYERÍA. TODOS LOS DERECHOS RESERVADOS.
           </p>
