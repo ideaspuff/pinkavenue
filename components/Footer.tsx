@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-start gap-2 justify-center md:justify-start text-left">
                 <MapPin className="w-4 h-4 text-brand-main mt-1" />
-                <span>{COMPANY_INFO.location}</span>
+                <span>{COMPANY_INFO.fullAddress}</span>
               </div>
               <div className="flex gap-4 mt-4 justify-center md:justify-start">
                 <a href={COMPANY_INFO.social.facebook} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full shadow-sm hover:text-brand-main hover:shadow-md transition-all">
