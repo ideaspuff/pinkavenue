@@ -76,7 +76,7 @@ const FittingRoomFloat: React.FC = () => {
     };
 
     // Dynamic Time Slots based on Appointment Date
-    const getAvailableTimeSlots = () => {
+    const availableSlots = React.useMemo(() => {
         const dayOfWeek = getAppointmentDayOfWeek();
 
         // Sunday (0)
@@ -84,9 +84,7 @@ const FittingRoomFloat: React.FC = () => {
             return []; // No regular slots
         }
 
-        // Saturday (6) - 11:00 AM to 4:30 PM (Last slot starts 3:30 PM or 4:00 PM? User said "Sábados de 11 am a 4.30pm")
-        // Assuming 1hr slots, reasonable slots: 11-12, 12-1, 1-2, 2-3, 3-4. (Ending at 4:30 implies maybe 3:30-4:30 slot? Let's stick to full hours for simplicity or 3-4)
-        // Let's offer slots that fit within 11am - 4:30pm
+        // Saturday (6) - 11:00 AM to 4:00 PM
         if (dayOfWeek === 6) {
             return [
                 "11:00 AM - 12:00 PM",
@@ -109,9 +107,7 @@ const FittingRoomFloat: React.FC = () => {
             "6:00 PM - 7:00 PM",
             "7:00 PM - 8:00 PM"
         ];
-    };
-
-    const availableSlots = getAvailableTimeSlots();
+    }, [formData.apptDay, formData.apptMonth, formData.apptYear]);
     const isSunday = getAppointmentDayOfWeek() === 0;
 
     // React to slot changes if current selection is invalid

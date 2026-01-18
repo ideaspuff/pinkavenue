@@ -49,7 +49,6 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => console.log('Nav Link Clicked:', link.path)}
                 className={`font-sans text-xs uppercase tracking-[0.2em] font-bold hover:text-brand-main transition-colors duration-200 relative group ${location.pathname === link.path ? 'text-brand-main' : 'text-gray-600'}`}
               >
                 {link.name}
