@@ -1,0 +1,20 @@
+:root {
+    /* Brand Palette - Single Source of Truth */
+    /* Using bright pinks and fuchsias, avoiding wine/burgundy tones */
+
+    --color-brand-light: #fdf2f8;
+    /* Pink-50 */
+    --color-brand-main: #ec4899;
+    /* Pink-500 */
+    --color-brand-dark: #be185d;
+    /* Pink-700 - Deep Pink, not Wine */
+    --color-brand-accent: #d946ef;
+    /* Fuchsia-500 */
+    --color-brand-gold: #fbbf24;
+    /* Amber-400 - Brighter Gold */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
