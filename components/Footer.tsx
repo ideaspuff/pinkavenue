@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Facebook, Instagram, Diamond } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { COMPANY_INFO } from '../constants';
 
 const Footer: React.FC = () => {
@@ -23,10 +24,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <h4 className="font-serif text-gray-900 tracking-wider mb-4 border-b border-brand-main pb-2 inline-block">EXPLORAR</h4>
             <ul className="space-y-2 font-sans text-gray-600 text-sm">
-              <li><a href="#/catalogo" className="hover:text-brand-main transition-colors">Colección Bodas</a></li>
-              <li><a href="#/catalogo" className="hover:text-brand-main transition-colors">Colección XV Años</a></li>
-              <li><a href="#/nosotros" className="hover:text-brand-main transition-colors">Nuestra Historia</a></li>
-              <li><a href="#/contacto" className="hover:text-brand-main transition-colors">Visítanos</a></li>
+              <li><Link to="/catalogo" className="hover:text-brand-main transition-colors">Colección Bodas</Link></li>
+              <li><Link to="/catalogo" className="hover:text-brand-main transition-colors">Colección XV Años</Link></li>
+              <li><Link to="/nosotros" className="hover:text-brand-main transition-colors">Nuestra Historia</Link></li>
+              <li><Link to="/contacto" className="hover:text-brand-main transition-colors">Visítanos</Link></li>
             </ul>
           </div>
 
