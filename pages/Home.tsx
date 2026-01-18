@@ -58,25 +58,38 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. STATEMENT & TEASER */}
-      <section className="py-24 md:py-32 bg-stone-50 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <Star className="w-8 h-8 text-brand-gold mx-auto mb-8 animate-pulse" />
-          <h3 className="font-display text-3xl md:text-5xl text-gray-900 mb-8 leading-tight">
-            LA DISTINCIÓN NO SE EXPLICA,<br />SE SIENTE.
-          </h3>
-          <p className="font-sans text-gray-500 text-lg md:text-xl font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            En un mundo de producción masiva, Pink Avenue es un retorno a la curaduría personal.
-            Cada tiara y gargantilla en nuestro archivo ha sido seleccionada por su capacidad de capturar la luz.
+      {/* Statement Section - Redesigned Option A (The Centerpiece) */}
+      <div className="relative h-[80vh] w-full bg-gray-900 overflow-hidden flex items-center justify-center my-20">
+        {/* Parallax Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 md:opacity-50"
+          style={{
+            backgroundImage: 'url(/images/statement_bg.png)',
+            backgroundAttachment: 'fixed', // Simple CSS parallax
+            backgroundPosition: 'center 30%'
+          }}
+        ></div>
+
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-gray-900/80"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white fade-in">
+          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl mb-8 leading-tight tracking-wider">
+            LA JOYERÍA NO ADORNA, <br />
+            <span className="text-brand-gold italic font-serif">revela.</span>
+          </h2>
+          <div className="w-24 h-px bg-brand-gold mx-auto mb-10"></div>
+          <p className="font-display text-lg md:text-xl lg:text-2xl font-light tracking-wide leading-relaxed opacity-90 max-w-2xl mx-auto">
+            "Es el lenguaje silencioso de la feminidad; el destello que ilumina la esencia de una mujer en su momento más inolvidable."
           </p>
-          <Link
-            to="/nosotros"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b border-gray-900 pb-1 hover:text-brand-main hover:border-brand-main transition-all"
-          >
-            Descubre El Atelier <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="mt-12">
+            <Link to="/nosotros" className="inline-block border border-white/30 px-10 py-4 text-xs font-display font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-gray-900 transition-all duration-300 backdrop-blur-sm">
+              Descubre Nuestra Esencia
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* 4. CURATED COLLECTION (Producto) */}
       <section className="py-24 bg-white">
