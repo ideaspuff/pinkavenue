@@ -60,8 +60,9 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">Horario de Showroom</h3>
                   <ul className="font-serif text-gray-900 space-y-1">
-                    <li>Lunes - Sábado: <span className="text-gray-500">10:00 AM - 8:00 PM</span></li>
-                    <li>Domingo: <span className="text-brand-main italic">Solo con cita previa</span></li>
+                    <li>{COMPANY_INFO.hours.weekdays}</li>
+                    <li>{COMPANY_INFO.hours.saturday}</li>
+                    <li className="text-brand-main italic">{COMPANY_INFO.hours.other}</li>
                   </ul>
                 </div>
               </div>
@@ -76,7 +77,7 @@ const Contact: React.FC = () => {
               <div className="bg-white/95 backdrop-blur-md p-8 max-w-md shadow-2xl border-l-4 border-brand-main">
                 <h3 className="font-display text-2xl text-gray-900 mb-2">EL DESTINO</h3>
                 <p className="font-sans font-light text-gray-600 mb-6 leading-relaxed">
-                  Situados en el corazón de la Zona Dorada. Valet parking disponible para tu comodidad durante tu prueba.
+                  Situados {COMPANY_INFO.location}. Valet parking disponible para tu comodidad durante tu prueba.
                 </p>
                 <button className="w-full bg-gray-900 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-brand-main transition-colors font-bold">
                   Abrir Mapa

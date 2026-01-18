@@ -7,13 +7,13 @@ const Footer: React.FC = () => {
     <footer className="bg-stone-100 border-t border-brand-light pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-          
+
           {/* Brand Section */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-             <div className="flex items-center gap-2">
-                <Diamond className="w-5 h-5 text-brand-main" />
-                <h3 className="font-display text-lg tracking-widest text-gray-900">PINK AVENUE</h3>
-             </div>
+            <div className="flex items-center gap-2">
+              <Diamond className="w-5 h-5 text-brand-main" />
+              <h3 className="font-display text-lg tracking-widest text-gray-900">PINK AVENUE</h3>
+            </div>
             <p className="text-gray-500 text-sm font-sans leading-relaxed max-w-xs">
               Elegancia que perdura. Joyería fina de fantasía especializada en hacer brillar tus momentos más importantes.
             </p>
@@ -43,12 +43,12 @@ const Footer: React.FC = () => {
                 <span>{COMPANY_INFO.location}</span>
               </div>
               <div className="flex gap-4 mt-4 justify-center md:justify-start">
-                 <a href="#" className="p-2 bg-white rounded-full shadow-sm hover:text-brand-main hover:shadow-md transition-all">
-                    <Facebook className="w-5 h-5" />
-                 </a>
-                 <a href="#" className="p-2 bg-white rounded-full shadow-sm hover:text-brand-main hover:shadow-md transition-all">
-                    <Instagram className="w-5 h-5" />
-                 </a>
+                <a href={COMPANY_INFO.social.facebook} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full shadow-sm hover:text-brand-main hover:shadow-md transition-all">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href={`https://instagram.com/${COMPANY_INFO.social.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full shadow-sm hover:text-brand-main hover:shadow-md transition-all">
+                  <Instagram className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>

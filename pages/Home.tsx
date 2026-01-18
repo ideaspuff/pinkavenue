@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles, Star, ChevronDown } from 'lucide-react';
+import { COMPANY_INFO } from '../constants';
 import ProductCard from '../components/ProductCard';
 import HeroSlider from '../components/HeroSlider';
 import { PRODUCTS } from '../data/products';
@@ -147,7 +148,7 @@ const Home: React.FC = () => {
             <h3 className="font-display text-3xl text-gray-900 mb-6">TU CITA PRIVADA</h3>
             <p className="font-sans text-gray-500 font-light mb-8 leading-relaxed">
               Creemos que la joyería debe probarse con calma y una copa en mano.
-              Agenda tu visita a nuestro showroom en la Zona Dorada para una sesión de estilismo personalizada.
+              Agenda tu visita a nuestro showroom {COMPANY_INFO.location} para una sesión de estilismo personalizada.
             </p>
             <Link to="/contacto" className="inline-block bg-gray-900 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-brand-main transition-colors">
               Reservar Showroom

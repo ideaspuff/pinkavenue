@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Diamond, Crown, Sparkles, PenTool, Gem, Clock, ShieldCheck, ArrowRight } from 'lucide-react';
+import { COMPANY_INFO } from '../constants';
 
 const About: React.FC = () => {
     return (
@@ -41,7 +42,7 @@ const About: React.FC = () => {
                         una joya que capture la luz de los reflectores y la sostenga eternamente en las fotografías.
                     </p>
                     <p className="mt-6">
-                        Situados en el corazón de la Zona Dorada de Acapulco, nuestro Atelier es un refugio contra lo ordinario.
+                        Situados {COMPANY_INFO.location}, nuestro Atelier es un refugio contra lo ordinario.
                         Aquí, la <strong>curaduría es nuestra forma de arte</strong>. No somos fabricantes masivos; somos guardianes de un estilo sofisticado
                         que fusiona la tradición europea con la vibrante energía de la costa.
                     </p>
