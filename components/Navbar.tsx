@@ -33,15 +33,15 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <Link to="/" className="flex flex-col items-center group">
-            <div className="flex items-center gap-2">
-              <Diamond className="w-6 h-6 text-brand-main transition-colors duration-300" />
-              <h1 className="font-display text-2xl tracking-widest font-bold text-gray-900">
-                PINK AVENUE
-              </h1>
-            </div>
-            <span className="text-[0.6rem] tracking-[0.3em] uppercase text-brand-main mt-0.5">Joyería</span>
-          </Link>
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex items-center gap-2 group">
+              <img
+                src="/images/logo.png"
+                alt="Pink Avenue Joyería"
+                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-12">
