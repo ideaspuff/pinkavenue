@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pink Avenue Joyería | Acapulco</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                light: 'var(--color-brand-light)',
-                main: 'var(--color-brand-main)',
-                dark: 'var(--color-brand-dark)',
-                accent: 'var(--color-brand-accent)',
-                gold: 'var(--color-brand-gold)',
-              }
-            },
-            fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              display: ['"Cinzel"', 'serif'],
-              sans: ['"Lato"', 'sans-serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Avenue Joyería | Acapulco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: 'var(--color-brand-light)',
+              main: 'var(--color-brand-main)',
+              dark: 'var(--color-brand-dark)',
+              accent: 'var(--color-brand-accent)',
+              gold: 'var(--color-brand-gold)',
             }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Lato"', 'sans-serif'],
           }
         }
       }
-    </script>
-    <style>
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-      /* Custom fade in animation */
-      .fade-in {
-        animation: fadeIn 1.2s ease-in-out forwards;
+    }
+  </script>
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom fade in animation */
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
         opacity: 0;
+        transform: translateY(20px);
       }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      .slide-up {
-        animation: slideUp 0.8s ease-out forwards;
+    }
+
+    .slide-up {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
         opacity: 0;
+        transform: translateY(40px);
       }
-      @keyframes slideUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      
-      /* Drawer Animations */
-      @keyframes slideInRight {
-        from { transform: translateX(100%); }
-        to { transform: translateX(0); }
+    }
+
+    /* Drawer Animations */
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
       }
-      @keyframes slideInUpFull {
-        from { transform: translateY(100%); }
-        to { transform: translateY(0); }
+
+      to {
+        transform: translateX(0);
       }
-    </style>
+    }
+
+    @keyframes slideInUpFull {
+      from {
+        transform: translateY(100%);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -74,10 +106,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-stone-50 text-gray-800 antialiased">
-    <div id="root"></div>
+
+<body class="bg-stone-50 text-gray-800 antialiased font-serif">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

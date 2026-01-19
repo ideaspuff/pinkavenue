@@ -158,7 +158,7 @@ const ProductDetail: React.FC = () => {
             <p className="font-serif text-lg text-gray-500 italic mb-8 font-light">Ref. Catálogo: {product.id.toString().padStart(4, '0')}</p>
 
             <div className="prose prose-stone mb-10">
-              <p className="font-sans text-gray-600 font-light leading-relaxed text-lg">
+              <p className="text-gray-600 font-light leading-relaxed text-lg">
                 {product.description}
               </p>
             </div>
@@ -167,17 +167,17 @@ const ProductDetail: React.FC = () => {
             <div className="mt-4 mb-12 border-t border-gray-100 pt-8">
               <dl className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-y-6 gap-x-4">
                 <dt className="font-serif italic text-gray-400 text-sm">Tipo de Pieza</dt>
-                <dd className="font-sans text-sm text-gray-800 font-light uppercase tracking-wide">
+                <dd className="text-sm text-gray-800 font-light uppercase tracking-wide">
                   {product.type}
                 </dd>
 
                 <dt className="font-serif italic text-gray-400 text-sm">Acabado</dt>
-                <dd className="font-sans text-sm text-gray-800 font-light leading-relaxed">
+                <dd className="text-sm text-gray-800 font-light leading-relaxed">
                   {product.tone === 'Plata' ? 'Baño de Plata .925' : 'Baño de Oro 18k'} con Cristal Austriaco.
                 </dd>
 
                 <dt className="font-serif italic text-gray-400 text-sm">Dimensiones</dt>
-                <dd className="font-sans text-sm text-gray-800 font-light leading-relaxed">
+                <dd className="text-sm text-gray-800 font-light leading-relaxed">
                   {product.type === 'Tiara' || product.type === 'Corona' ? 'Ajustable a peinado.' : 'Medida estándar con extensibles.'}
                 </dd>
               </dl>
@@ -187,12 +187,12 @@ const ProductDetail: React.FC = () => {
             <div ref={actionsRef} className="flex flex-col gap-4 mb-8 mt-auto">
               <button
                 onClick={() => addItem(product)}
-                className="w-full bg-gray-900 text-white py-5 px-8 text-center uppercase tracking-[0.2em] text-xs font-bold hover:bg-brand-main transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
+                className="font-sans w-full bg-gray-900 text-white py-5 px-8 text-center uppercase tracking-[0.2em] text-xs font-bold hover:bg-brand-main transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
               >
                 <Star className="w-4 h-4" />
                 Añadir a Selección Personal
               </button>
-              <p className="text-center text-[10px] text-gray-400 font-sans uppercase tracking-widest mt-2">
+              <p className="text-center text-[10px] text-gray-400 uppercase tracking-widest mt-2">
                 Agregue piezas a su lista para reservar una sesión de estilismo privada.
               </p>
             </div>
@@ -259,7 +259,7 @@ const ProductDetail: React.FC = () => {
         </div>
         <button
           onClick={() => addItem(product)}
-          className="w-full sm:w-auto bg-gray-900 text-white py-3 px-6 text-center uppercase tracking-widest text-xs font-bold hover:bg-brand-main transition-colors flex items-center justify-center gap-2"
+          className="font-sans w-full sm:w-auto bg-gray-900 text-white py-3 px-6 text-center uppercase tracking-widest text-xs font-bold hover:bg-brand-main transition-colors flex items-center justify-center gap-2"
         >
           <Star className="w-4 h-4" />
           Seleccionar
