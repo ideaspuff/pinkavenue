@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'border-b border-stone-100 py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20 md:h-24">
 
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
               <img
                 src="/images/Logo.png"
                 alt="Pink Avenue Joyería"
-                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
           </div>
