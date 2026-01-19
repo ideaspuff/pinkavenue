@@ -71,17 +71,21 @@ const Contact: React.FC = () => {
 
           {/* Map / Visual Side */}
           <div className="lg:col-span-7 relative h-[600px] bg-stone-100 slide-up overflow-hidden group">
-            {/* Artistic Map Placeholder */}
-            <img src="https://picsum.photos/id/1015/1200/1200" alt="Ubicación Pink Avenue" className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:scale-105 transition-transform duration-1000" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-12">
-              <div className="bg-white/95 backdrop-blur-md p-8 max-w-md shadow-2xl border-l-4 border-brand-main">
-                <h3 className="font-display text-2xl text-gray-900 mb-2">EL DESTINO</h3>
-                <p className="font-sans font-light text-gray-600 mb-6 leading-relaxed">
-                  Situados {COMPANY_INFO.location}. Valet parking disponible para tu comodidad durante tu prueba.
-                </p>
-                <button className="w-full bg-gray-900 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] hover:bg-brand-main transition-colors font-bold">
-                  Abrir Mapa
-                </button>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1909.1220610237033!2d-99.88790296367944!3d16.863814157867264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca581fd1787beb%3A0xf0cc86bc98991494!2sPINK%20AVENUE%20JOYER%C3%8DA!5e0!3m2!1sen!2sus!4v1768781230408!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: 'grayscale(100%) contrast(1.2) opacity(0.8)' }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
+
+            {/* Overlay Title (Keeping simple) */}
+            <div className="absolute top-6 right-6 pointer-events-none">
+              <div className="bg-white/90 backdrop-blur px-6 py-3 border-l-2 border-brand-main shadow-lg">
+                <span className="font-display text-gray-900 tracking-widest text-sm">UBICACIÓN</span>
               </div>
             </div>
           </div>
